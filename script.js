@@ -20,8 +20,16 @@ button.onclick = function(){
         if(attemps == 0){
             message.innerText = "Vous avez perdu, il fallait deviné " + secretNumber + '';
             message.style.color = "red";
-            form.style.display = 'none';
-            link.style.display = 'flex';
+            form.style.display = "none";
+            link.style.display = "flex";
+        }
+        attemps--;
+
+        if(input.value == secretNumber){
+            message.innerText = "Félicitation, vous avez trouvé le nombre mistère : " + secretNumber + " !"
+            message.style.color = "green";
+            form.style.display = "none";
+            link.style.display = "flex";
         }
 
     }else{
