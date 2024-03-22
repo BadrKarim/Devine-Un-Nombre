@@ -4,7 +4,7 @@ let message = document.getElementById('message');
 let link = document.getElementById('link');
 
 const secretNumber = Math.floor(Math.random() * 100);
-let attempt = 3
+let attempt = 10
 
 button.onclick = function(){
     const input = document.getElementById('input');
